@@ -1,18 +1,14 @@
-import { BrowserRouter, Link, Route, Routes } from "react-router";
+import { BrowserRouter, Route, Routes } from "react-router";
 import App from "./components/Home/App";
 import Shop from "./components/Shop/Shop";
 import Cart from "./components/Cart/Cart";
 import ProductView from "./components/Shop/ProductView/ProductView";
+import Header from "./components/Home/Header";
 
 const RouteSwitch = () => {
   return (
     <BrowserRouter>
-      <div>
-        <p>My other links</p>
-        <Link to="/shop">My Shop</Link>
-        <br />
-        <Link to="/cart">Cart Items</Link>
-      </div>
+      <Header />
 
       <Routes>
         <Route path="/" element={<App />} />
