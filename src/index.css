@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poller+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -19,11 +23,24 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+
+  font-family: "Roboto", serif;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+
+  align-items: center;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+
+  font-family: "Poller One";
+  font-style: normal;
 }
 
 button {
@@ -37,9 +54,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   background-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;

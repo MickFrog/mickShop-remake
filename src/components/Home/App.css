@@ -1,0 +1,6 @@
+.mainContainer {
+    max-width: 1280px;
+
+    flex: 1 1 auto;
+    flex-shrink: 0;
+}

@@ -1,6 +1,7 @@
 .headerContainer {
     display: flex;
     flex-flow: row wrap;
+    width: 100%;
     gap: 1rem;
     justify-content: space-between;
     align-items: center;
@@ -13,9 +14,7 @@
 }
 
 .headingText {
-    font-family: "Poller One";
     font-weight: 600;
-    font-style: normal;
 }
 
 .headerLinksContainer {

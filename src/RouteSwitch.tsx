@@ -4,6 +4,7 @@ import Shop from "./components/Shop/Shop";
 import Cart from "./components/Cart/Cart";
 import ProductView from "./components/Shop/ProductView/ProductView";
 import Header from "./components/Home/Header";
+import Footer from "./components/Home/Footer";
 
 const RouteSwitch = () => {
   return (
@@ -16,6 +17,8 @@ const RouteSwitch = () => {
         <Route path="/shop/:pdtID" element={<ProductView />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
+
+      <Footer />
     </BrowserRouter>
   );
 };
