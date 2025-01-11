@@ -13,9 +13,15 @@ type ProductProps = {
 const Product = ({ product }: ProductProps) => {
   return (
     <div className="pdtContainer">
-      <p>Image here</p>
-      <p>{product.name}</p>
-      <p>Cart items so far here</p>
+      <div>
+        <img
+          className="pdtImage"
+          src={`./productImages/${product.id}.svg`}
+          alt="product_image"
+        />
+      </div>
+      <p style={{ margin: "0 0.2rem" }}>{product.name}</p>
+      <button>Buy</button>
     </div>
   );
 };

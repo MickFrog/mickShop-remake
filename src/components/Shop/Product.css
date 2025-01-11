@@ -3,4 +3,23 @@
     border-radius: 10px;
 
     max-width: 350px;
+    text-align: center;
+
+    padding-bottom: 0.5rem;
+}
+
+.pdtImage {
+    background-color: white;
+    width: 100%;
+    max-height: 200px;
+    padding: 1rem;
+    border-radius: 10px 10px 0 0;
+
+    transition: 200ms ease;
+}
+
+.pdtContainer:hover .pdtImage {
+    transform: translateY(-30px) scale(1.1);
+    border-radius: 10px;
+    background-color: lightblue;
 }
