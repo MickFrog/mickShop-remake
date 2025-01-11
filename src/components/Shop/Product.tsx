@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import "./Product.css";
 
-type Product = {
+export type Product = {
   id: string;
   name: string;
   description: string;

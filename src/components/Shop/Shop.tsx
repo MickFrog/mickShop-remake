@@ -1,13 +1,14 @@
+import { useContext } from "react";
 import Product from "./Product";
 import "./Shop.css";
-import products from "./products.json";
-
-const computer_parts = products.computer_parts;
+import ShopContext from "../../Context/ShopContext";
 
 const Shop = () => {
+  const { products } = useContext(ShopContext);
+
   return (
     <div className="itemsHolder">
-      {computer_parts.map((pdt) => (
+      {products.map((pdt) => (
         <Product key={pdt.id} product={pdt} />
       ))}
     </div>

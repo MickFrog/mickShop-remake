@@ -1,14 +1,13 @@
 import { Link, useParams } from "react-router";
 import "./ProductView.css";
-
-import products from "../products.json";
-
-const computer_parts = products.computer_parts;
+import { useContext } from "react";
+import ShopContext from "../../../Context/ShopContext";
 
 const ProductView = () => {
   const { pdtID } = useParams();
+  const { products } = useContext(ShopContext);
 
-  const viewingProduct = computer_parts.filter((pdt) => pdt.id === pdtID);
+  const viewingProduct = products.filter((pdt) => pdt.id === pdtID);
 
   return (
     <>
