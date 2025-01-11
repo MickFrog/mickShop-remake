@@ -1,0 +1,10 @@
+.pdtDesc {
+    padding: 4rem 1rem;
+    max-width: 600px;
+
+    text-align: center;
+}
+
+.pdtViewImg {
+    width: calc(10vw + 50px);
+}

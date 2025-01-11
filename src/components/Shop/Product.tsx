@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import "./Product.css";
 
 type Product = {
@@ -21,7 +22,9 @@ const Product = ({ product }: ProductProps) => {
         />
       </div>
       <p style={{ margin: "0 0.2rem" }}>{product.name}</p>
-      <button>Buy</button>
+      <Link to={`/shop/${product.id}`}>
+        <button>Buy</button>
+      </Link>
     </div>
   );
 };

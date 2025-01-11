@@ -19,7 +19,7 @@
 }
 
 .pdtContainer:hover .pdtImage {
-    transform: translateY(-30px) scale(1.1);
+    transform: translateY(-20px) scale(1.02);
     border-radius: 10px;
     background-color: lightblue;
 }
