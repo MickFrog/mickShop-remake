@@ -52,7 +52,7 @@ const ShopContextProvider = ({ children }: { children: ReactNode }) => {
       return cartIt.product.id === working_id;
     });
 
-    if (filtered_cartItem && filtered_cartItem?.productCount > 0) {
+    if (filtered_cartItem && filtered_cartItem?.productCount > 1) {
       const newCartItems = cartItems.map((cartItem: CartItem) => {
         if (cartItem.product.id === working_id) {
           cartItem.productCount--;
@@ -62,7 +62,7 @@ const ShopContextProvider = ({ children }: { children: ReactNode }) => {
       });
 
       setCartItems(newCartItems);
-    } else if (filtered_cartItem && filtered_cartItem.productCount < 1) {
+    } else if (filtered_cartItem && filtered_cartItem.productCount === 1) {
       const newCartItems = cartItems.filter(
         (cartIt: CartItem) => cartIt.product.id !== working_id
       );

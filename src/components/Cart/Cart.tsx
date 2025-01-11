@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import "./Cart.css";
 import CartProduct from "./CartItem";
 import ShopContext from "../../Context/ShopContext";
 
@@ -8,9 +7,13 @@ const Cart = () => {
 
   return (
     <div className="itemsHolder">
-      {cartItems.map((cartIt) => (
-        <CartProduct key={cartIt.product.id} cartItem={cartIt} />
-      ))}
+      {cartItems.length > 0 ? (
+        cartItems.map((cartIt) => (
+          <CartProduct key={cartIt.product.id} cartItem={cartIt} />
+        ))
+      ) : (
+        <h2>There are no items in the cart at the moment!</h2>
+      )}
     </div>
   );
 };
