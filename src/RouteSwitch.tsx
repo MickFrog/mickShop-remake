@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router";
+import { HashRouter, Route, Routes } from "react-router";
 import App from "./components/Home/App";
 import Shop from "./components/Shop/Shop";
 import Cart from "./components/Cart/Cart";
@@ -8,7 +8,7 @@ import Footer from "./components/Home/Footer";
 
 const RouteSwitch = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header />
 
       <Routes>
@@ -19,7 +19,7 @@ const RouteSwitch = () => {
       </Routes>
 
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

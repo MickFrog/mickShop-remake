@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import "./App.css";
 import homePic from "./assets/ai_pic.jpg";
 
@@ -24,6 +25,9 @@ function App() {
             seamless and stress-free. Ready to build your perfect PC? Let’s get
             started!
           </p>
+          <Link to="/shop">
+            <button>Shop Now!</button>
+          </Link>
         </div>
       </div>
     </main>
