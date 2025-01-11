@@ -9,20 +9,20 @@ import ShopContextProvider from "./Context/ShopContextProvider";
 
 const RouteSwitch = () => {
   return (
-    <HashRouter>
-      <Header />
+    <ShopContextProvider>
+      <HashRouter>
+        <Header />
 
-      <ShopContextProvider>
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/shop/:pdtID" element={<ProductView />} />
           <Route path="/cart" element={<Cart />} />
         </Routes>
-      </ShopContextProvider>
 
-      <Footer />
-    </HashRouter>
+        <Footer />
+      </HashRouter>
+    </ShopContextProvider>
   );
 };
 

@@ -5,9 +5,13 @@ import ShopContext from "../../../Context/ShopContext";
 
 const ProductView = () => {
   const { pdtID } = useParams();
-  const { products } = useContext(ShopContext);
+  const { products, addToCart } = useContext(ShopContext);
 
   const viewingProduct = products.filter((pdt) => pdt.id === pdtID);
+
+  const handleCartAddition = () => {
+    addToCart(viewingProduct[0].id);
+  };
 
   return (
     <>
@@ -27,9 +31,12 @@ const ProductView = () => {
           </div>
           <div>
             <p style={{ fontSize: "1.6rem" }}>
+              <u>{viewingProduct[0].name}</u>
+            </p>
+            <p style={{ fontSize: "1.2rem" }}>
               {viewingProduct[0].description}
             </p>
-            <button>Add to cart</button>
+            <button onClick={handleCartAddition}>Add to cart</button>
           </div>
         </div>
       )}
