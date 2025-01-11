@@ -1,7 +1,20 @@
 import { Link } from "react-router";
 import "./Header.css";
+import { useContext } from "react";
+import ShopContext from "../../Context/ShopContext";
 
 const Header = () => {
+  const { cartItems } = useContext(ShopContext);
+
+  const getTotalCartElements = () => {
+    const cartTotalItems = cartItems.reduce(
+      (total: number, currItem) => (total += currItem.productCount),
+      0
+    );
+
+    return cartTotalItems;
+  };
+
   return (
     <div className="headerContainer">
       <Link to="/">
@@ -13,7 +26,9 @@ const Header = () => {
           <button>Shop</button>
         </Link>
         <Link to="/cart">
-          <button>Cart</button>
+          <button className="cartBtn" data-count={getTotalCartElements()}>
+            Cart
+          </button>
         </Link>
       </div>
     </div>
