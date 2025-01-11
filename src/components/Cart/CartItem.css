@@ -1,0 +1,15 @@
+.cartActions {
+    padding: 0 1rem;
+    display: flex;
+    flex-flow: row wrap;
+
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cartActions > button {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
