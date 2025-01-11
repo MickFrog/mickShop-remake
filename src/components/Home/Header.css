@@ -11,10 +11,12 @@
     top: 0;
 
     border-bottom: 1px solid green;
+    background-color: #2E3532;
 }
 
 .headingText {
     font-weight: 600;
+    margin: 1rem 0rem;
 }
 
 .headerLinksContainer {
