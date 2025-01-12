@@ -23,7 +23,7 @@ const CartProduct = ({ cartItem }: { cartItem: CartItem }) => {
         />
       </div>
       <p style={{ margin: "0 0.2rem" }}>{cartItem.product.name}</p>
-      <p style={{ fontSize: "1.8rem", margin: "0", color: "#F5B700" }}>
+      <p className="cartItemPrice">
         <i>{cartItem.product.price}</i>
       </p>
       <div className="cartActions">
@@ -31,7 +31,7 @@ const CartProduct = ({ cartItem }: { cartItem: CartItem }) => {
         <p>{cartItem.productCount}</p>
         <button onClick={handleAddToCart}>+</button>
       </div>
-      <p style={{ fontSize: "1.8rem", margin: "0", color: "#008BF8" }}>
+      <p className="cartItemAmount">
         <i>
           Total: {(cartItem.product.price * cartItem.productCount).toFixed(2)}
         </i>

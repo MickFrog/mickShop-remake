@@ -29,7 +29,7 @@ const Product = ({ product }: ProductProps) => {
         </b>
       </p>
       <Link to={`/shop/${product.id}`}>
-        <button>Buy</button>
+        <button className="buyButton">Buy</button>
       </Link>
     </div>
   );

@@ -9,3 +9,10 @@
     margin: 4rem 2rem;
     font-size: 1.6rem;
 }
+
+@media (max-width: 568px) {
+    .itemsHolder {
+        gap: 0.5rem;
+        margin: 1rem 0;
+    }
+}

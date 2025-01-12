@@ -1,3 +1,4 @@
+import "./Cart.css";
 import { useContext } from "react";
 import CartProduct from "./CartItem";
 import ShopContext from "../../Context/ShopContext";
@@ -29,11 +30,11 @@ const Cart = () => {
   return (
     <>
       {cartItems.length > 0 && (
-        <p style={{ fontSize: "1.8rem", margin: "1rem", color: "#F5B700" }}>
+        <p className="amountText">
           <i>Total Amount: {totalAmount.toFixed(2)}</i>
         </p>
       )}
-      <div className="itemsHolder" style={{ margin: "1rem" }}>
+      <div className="itemsHolder">
         {cartItems.length > 0 ? (
           cartItems.map((cartIt) => (
             <CartProduct key={cartIt.product.id} cartItem={cartIt} />
@@ -45,7 +46,7 @@ const Cart = () => {
       {cartItems.length > 0 && (
         <button
           onClick={handleCheckout}
-          style={{ fontSize: "1.6rem", margin: "1rem" }}
+          style={{ fontSize: "1.4rem", margin: "1rem" }}
         >
           Checkout
         </button>

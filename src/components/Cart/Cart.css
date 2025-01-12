@@ -1,0 +1,9 @@
+.amountText {
+    font-size: 1.6rem;
+    margin: 1rem;
+    color: #F5B700;
+
+    background-color: black;
+    padding: 0.2rem 0.4rem;
+    border-radius: 10px;
+}
