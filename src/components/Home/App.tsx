@@ -9,7 +9,7 @@ function App() {
         <div>
           <img className="homeImg" src={homePic} alt="AI_Chip_Image" />
         </div>
-        <div>
+        <div className="ShopDesc">
           <p>
             Welcome to REMADE – Your Trusted Source for Premium Computer Parts!
           </p>

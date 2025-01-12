@@ -44,3 +44,13 @@
     font-size: 0.8rem;
     border: 1px solid #CBEAA6;
 }
+
+@media (max-width: 568px) {
+    .headingText {
+        font-size: 3rem;
+    }
+
+    .headerContainer {
+        justify-content: center;
+    }
+}

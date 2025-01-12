@@ -18,3 +18,25 @@
     width: calc(15vw + 12rem);
     border-radius: 15px;
 }
+
+.ShopDesc {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+@media (max-width: 568px) {
+    .shopIntro {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homeImg {
+        width: 60vw;
+        border-radius: 15px;
+    }
+
+    .ShopDesc {
+        align-items: center;
+    }
+}
