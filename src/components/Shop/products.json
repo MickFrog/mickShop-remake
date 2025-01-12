@@ -3,62 +3,74 @@
       {
         "id": "cp1001",
         "name": "Intel Core i9-13900K Processor",
-        "description": "A high-performance 13th-gen processor with 24 cores and 32 threads, delivering exceptional speed for gaming and content creation."
+        "description": "A high-performance 13th-gen processor with 24 cores and 32 threads, delivering exceptional speed for gaming and content creation.",
+        "price": 299.99
       },
       {
         "id": "cp1002",
         "name": "AMD Ryzen 7 7800X3D Processor",
-        "description": "A cutting-edge processor with 8 cores and 16 threads, designed for unparalleled gaming and multi-tasking efficiency."
+        "description": "A cutting-edge processor with 8 cores and 16 threads, designed for unparalleled gaming and multi-tasking efficiency.",
+        "price": 699.99
       },
       {
         "id": "cp1003",
         "name": "NVIDIA GeForce RTX 4090 Graphics Card",
-        "description": "The ultimate GPU for gaming and creative work, offering stunning ray tracing, DLSS 3.0 support, and 24GB of GDDR6X memory."
+        "description": "The ultimate GPU for gaming and creative work, offering stunning ray tracing, DLSS 3.0 support, and 24GB of GDDR6X memory.",
+        "price": 79.9
       },
       {
         "id": "cp1004",
         "name": "ASUS ROG STRIX X670E Motherboard",
-        "description": "A premium motherboard for AMD Ryzen processors, featuring PCIe 5.0, Wi-Fi 6E, and robust overclocking support."
+        "description": "A premium motherboard for AMD Ryzen processors, featuring PCIe 5.0, Wi-Fi 6E, and robust overclocking support.",
+        "price": 109.99
       },
       {
         "id": "cp1005",
         "name": "Corsair Vengeance RGB PRO 32GB DDR5 RAM",
-        "description": "High-performance RGB memory with 32GB capacity and speeds of up to 6000MHz, perfect for gaming and heavy workloads."
+        "description": "High-performance RGB memory with 32GB capacity and speeds of up to 6000MHz, perfect for gaming and heavy workloads.",
+        "price": 249.99
       },
       {
         "id": "cp1006",
         "name": "Samsung 980 PRO 2TB NVMe SSD",
-        "description": "A lightning-fast storage solution with PCIe 4.0 technology, offering read speeds of up to 7,000 MB/s for demanding applications."
+        "description": "A lightning-fast storage solution with PCIe 4.0 technology, offering read speeds of up to 7,000 MB/s for demanding applications.",
+        "price": 99.99
       },
       {
         "id": "cp1007",
         "name": "Seagate BarraCuda 4TB Hard Drive",
-        "description": "A reliable and spacious HDD ideal for storing games, movies, and other large files, with a speed of 7200 RPM."
+        "description": "A reliable and spacious HDD ideal for storing games, movies, and other large files, with a speed of 7200 RPM.",
+        "price": 69.99
       },
       {
         "id": "cp1008",
         "name": "EVGA 850W SuperNOVA Power Supply",
-        "description": "A fully modular 80+ Gold certified PSU, delivering clean and efficient power to your PC while reducing cable clutter."
+        "description": "A fully modular 80+ Gold certified PSU, delivering clean and efficient power to your PC while reducing cable clutter.",
+        "price": 39.99
       },
       {
         "id": "cp1009",
         "name": "NZXT H7 Elite Mid-Tower Case",
-        "description": "A sleek and spacious mid-tower case with excellent airflow, tempered glass panels, and customizable RGB lighting."
+        "description": "A sleek and spacious mid-tower case with excellent airflow, tempered glass panels, and customizable RGB lighting.",
+        "price": 29.99
       },
       {
         "id": "cp1010",
         "name": "Noctua NH-D15 CPU Cooler",
-        "description": "A premium air cooler with dual fans, providing efficient and quiet cooling for high-performance processors."
+        "description": "A premium air cooler with dual fans, providing efficient and quiet cooling for high-performance processors.",
+        "price": 54.99
       },
       {
         "id": "cp1011",
         "name": "Logitech MX Master 3S Mouse",
-        "description": "An ergonomic and precision wireless mouse with customizable buttons, perfect for productivity and creative work."
+        "description": "An ergonomic and precision wireless mouse with customizable buttons, perfect for productivity and creative work.",
+        "price": 49.99
       },
       {
         "id": "cp1012",
         "name": "LG UltraGear 34GP950G-B Monitor",
-        "description": "A 34-inch ultra-wide QHD monitor with Nano IPS technology, 1ms response time, and G-SYNC compatibility for immersive gaming."
+        "description": "A 34-inch ultra-wide QHD monitor with Nano IPS technology, 1ms response time, and G-SYNC compatibility for immersive gaming.",
+        "price": 139.99
       }
     ]
   }
