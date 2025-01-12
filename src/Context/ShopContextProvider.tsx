@@ -71,9 +71,21 @@ const ShopContextProvider = ({ children }: { children: ReactNode }) => {
     }
   };
 
+  const clearCart = () => {
+    if (cartItems.length < 1) return;
+
+    setCartItems([]);
+  };
+
   return (
     <ShopContext.Provider
-      value={{ products: myProducts, cartItems, addToCart, removeCartItem }}
+      value={{
+        products: myProducts,
+        cartItems,
+        addToCart,
+        removeCartItem,
+        clearCart,
+      }}
     >
       {children}
     </ShopContext.Provider>

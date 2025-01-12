@@ -11,6 +11,7 @@ type ShopContextProps = {
   cartItems: Array<CartItem>;
   addToCart: (id: string) => void;
   removeCartItem: (id: string) => void;
+  clearCart: () => void;
 };
 
 const ShopContext = createContext<ShopContextProps>({
@@ -18,6 +19,7 @@ const ShopContext = createContext<ShopContextProps>({
   cartItems: [],
   addToCart: () => {},
   removeCartItem: () => {},
+  clearCart: () => {},
 });
 
 export default ShopContext;
