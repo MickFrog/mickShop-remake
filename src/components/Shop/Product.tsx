@@ -5,6 +5,7 @@ export type Product = {
   id: string;
   name: string;
   description: string;
+  price: number;
 };
 
 type ProductProps = {
@@ -22,6 +23,11 @@ const Product = ({ product }: ProductProps) => {
         />
       </div>
       <p style={{ margin: "0 0.2rem" }}>{product.name}</p>
+      <p style={{ margin: "0 0.2rem", color: "#F5B700" }}>
+        <b>
+          <i>{product.price}</i>
+        </b>
+      </p>
       <Link to={`/shop/${product.id}`}>
         <button>Buy</button>
       </Link>

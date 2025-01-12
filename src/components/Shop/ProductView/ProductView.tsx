@@ -36,6 +36,11 @@ const ProductView = () => {
             <p style={{ fontSize: "1.2rem" }}>
               {viewingProduct[0].description}
             </p>
+            <p style={{ fontSize: "1.8rem", color: "#F5B700" }}>
+              <b>
+                <i>{viewingProduct[0].price}</i>
+              </b>
+            </p>
             <button onClick={handleCartAddition}>Add to cart</button>
           </div>
         </div>
